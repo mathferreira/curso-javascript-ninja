@@ -46,7 +46,7 @@ valor dessa propriedade a quantidade passada por parâmetro;
 - Ele deverá modificar o valor da propriedade `andando` para o valor
 booleano que representa "verdadeiro";
 */
-pessoa.andar = return(metros) {
+pessoa.andar = function(metros) {
 pessoa.caminhouQuantosMetros += metros;
 pessoa.andando = true;
 };
@@ -157,7 +157,7 @@ pessoa.andar(50);
 /*
 A pessoa ainda está andando? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
-*/
+fu ( ---s = var.sex =*/
 pessoa.andando; // true
 
 /*
@@ -196,8 +196,27 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-?
 
+pessoa.apresentacao = function() {
+var sexo = 'o';
+var idadeAnos = 'anos';
+var metrosCaminhados = 'metros';
+
+if ( pessoa.sexo === 'Feminino' ) {
+sexo = 'a';
+}
+
+if( pessoa.idade === 1 ) { 
+idadeAnos = 'ano';
+}
+
+if( pessoa.caminhouQuantosMetros === 1 ) {
+metrosCaminhados = 'metro';
+
+}
+'Olá, eu sou ' + sexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + idadeAnos + ', ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metrosCaminhados + '!';
+}
 // Agora, apresente-se ;)
 ?
+pessoa.aprensentacao();
 ```
